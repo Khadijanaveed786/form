@@ -2,6 +2,14 @@
 <html>
 <head>
     <title>Document</title>
+    <script>
+        function display(){
+            var text1= document.getElementById('text1').value
+            var text2= document.getElementById('text2').value
+            console.log('Username:', text1)
+            console.log('Password:', text2)
+        }
+    </script>
     <style>
         *{
             margin: 0;
@@ -40,9 +48,9 @@
 <body>
     <fieldset>
         <legend>Form</legend>
-        <input class="text1" type="text" placeholder="Enter your name"><br><br>
-        <input class="text1" type="password" placeholder="Enter your password"><br><br>
-        <button class="butn" type="login">LOGIN</button><br><br>            
+        <input class="text1" id="text1" type="text" placeholder="Enter your name"><br><br>
+        <input class="text1" id="text2" type="password" placeholder="Enter your password"><br><br>
+        <button onclick="display()" class="butn" type="login">LOGIN</button><br><br>            
         <h3 class="text2">Create an account</h3>
     </fieldset>
 </body>
